@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div id="head">
+      <div class="container">
+        <div class="header">
+          <h1 class="h1 text-center mt-2 text-primary">Todo List</h1>
+        </div>
+        <div class="input-group mb-3 dropdown">
+          <button class="btn btn-outline-primary" type="button" id="button-add">
+            <i
+              class="bi bi-plus-lg fs-4 d-flex justify-content-center align-items-center"
+            ></i>
+          </button>
+          <input placeholder="New mission." type="text" class="form-control" />
+          <button
+            class="btn btn-outline-primary dropdown-toggle"
+            type="button"
+            id="dropdownColorBtn"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Text color
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownColorBtn">
+            <li>
+              <button type="button" class="dropdown-item text-black">
+                Black
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item text-success">
+                Success
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item text-danger">
+                Danger
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item text-warning">
+                Warning
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item text-info">
+                Info
+              </button>
+            </li>
+          </ul>
+          <button
+            class="btn btn-outline-primary dropdown-toggle"
+            type="button"
+            id="dropdownDayBtn"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Choose day
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownDayBtn">
+            <li>
+              <button type="button" class="dropdown-item">General</button>
+            </li>
+            <li><button type="button" class="dropdown-item">Monday</button></li>
+            <li>
+              <button type="button" class="dropdown-item">Tuesday</button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item">Wednesday</button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item">Thursday</button>
+            </li>
+            <li><button type="button" class="dropdown-item">Friday</button></li>
+            <li>
+              <button type="button" class="dropdown-item">Saturday</button>
+            </li>
+            <li><button type="button" class="dropdown-item">Sunday</button></li>
+          </ul>
+        </div>
+        <div
+          class="button-filter d-flex justify-content-between align-items-center"
+        >
+          <div class="btn-group button-statu-filter">
+            <button class="btn btn-outline-secondary" type="button">
+              General
+            </button>
+            <button class="btn btn-outline-secondary" type="button">
+              Completed
+            </button>
+            <button class="btn btn-outline-secondary" type="button">
+              Incomplete
+            </button>
+          </div>
+          <div class="btn-group button-day-filter">
+            <button class="btn btn-outline-secondary" type="button">
+              Monday
+            </button>
+            <button class="btn btn-outline-secondary" type="button">
+              Tuesday
+            </button>
+            <button class="btn btn-outline-secondary" type="button">
+              Wednesday
+            </button>
+            <button class="btn btn-outline-secondary" type="button">
+              Thursday
+            </button>
+            <button class="btn btn-outline-secondary" type="button">
+              Friday
+            </button>
+            <button class="btn btn-outline-secondary" type="button">
+              Saturday
+            </button>
+            <button class="btn btn-outline-secondary" type="button">
+              Sunday
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main"></div>
+
+    <div id="footer"></div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
