@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
@@ -18,6 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -51,6 +56,7 @@
             class="form-control text-dark all"
             id="input-new-mission"
           />
+          <!-- button text color -->
           <button
             type="button"
             class="btn btn-outline-primary dropdown-toggle"
@@ -62,36 +68,37 @@
           </button>
           <ul class="dropdown-menu" aria-labelledby="button-dropdown-color">
             <li>
-              <button type="button" class="dropdown-item" data-color="black">
-                <i class="bi bi-paint-bucket text-Dark"></i
-                ><i class="text-secondary">Dark</i>
+              <button
+                type="button"
+                class="dropdown-item active"
+                data-color="Dark"
+              >
+                <i class="bi bi-paint-bucket text-Dark"></i>Dark
               </button>
             </li>
             <li>
               <button type="button" class="dropdown-item" data-color="success">
-                <i class="bi bi-paint-bucket text-success"></i
-                ><i class="text-secondary">Success</i>
+                <i class="bi bi-paint-bucket text-success"></i>Success
               </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item" data-color="success">
-                <i class="bi bi-paint-bucket text-danger"></i
-                ><i class="text-secondary">Danger</i>
+              <button type="button" class="dropdown-item" data-color="danger">
+                <i class="bi bi-paint-bucket text-danger"></i>Danger
               </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item" data-color="success">
-                <i class="bi bi-paint-bucket text-warning"></i
-                ><i class="text-secondary">Warning</i>
+              <button type="button" class="dropdown-item" data-color="warning">
+                <i class="bi bi-paint-bucket text-warning"></i>Warning
               </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item" data-color="success">
-                <i class="bi bi-paint-bucket text-info"></i
-                ><i class="text-secondary">Info</i>
+              <button type="button" class="dropdown-item" data-color="info">
+                <i class="bi bi-paint-bucket text-info"></i>Info
               </button>
             </li>
           </ul>
+
+          <!-- button chose day -->
           <button
             class="btn btn-outline-primary dropdown-toggle"
             type="button"
@@ -103,74 +110,42 @@
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdown-day-button">
             <li>
-              <button
-                type="button"
-                class="dropdown-item text-secondary"
-                data-day="all"
-              >
+              <button type="button" class="dropdown-item active" data-day="all">
                 All
               </button>
             </li>
             <li>
-              <button
-                type="button"
-                class="dropdown-item text-secondary"
-                data-day="monday"
-              >
+              <button type="button" class="dropdown-item" data-day="monday">
                 Monday
               </button>
             </li>
             <li>
-              <button
-                type="button"
-                class="dropdown-item text-secondary"
-                data-day="tuesday"
-              >
+              <button type="button" class="dropdown-item" data-day="tuesday">
                 Tuesday
               </button>
             </li>
             <li>
-              <button
-                type="button"
-                class="dropdown-item text-secondary"
-                data-day="wednesday"
-              >
+              <button type="button" class="dropdown-item" data-day="wednesday">
                 Wednesday
               </button>
             </li>
             <li>
-              <button
-                type="button"
-                class="dropdown-item text-secondary"
-                data-day="thursday"
-              >
+              <button type="button" class="dropdown-item" data-day="thursday">
                 Thursday
               </button>
             </li>
             <li>
-              <button
-                type="button"
-                class="dropdown-item text-secondary"
-                data-day="friday"
-              >
+              <button type="button" class="dropdown-item" data-day="friday">
                 Friday
               </button>
             </li>
             <li>
-              <button
-                type="button"
-                class="dropdown-item text-secondary"
-                data-day="saturday"
-              >
+              <button type="button" class="dropdown-item" data-day="saturday">
                 Saturday
               </button>
             </li>
             <li>
-              <button
-                type="button"
-                class="dropdown-item text-secondary"
-                data-day="sunday"
-              >
+              <button type="button" class="dropdown-item" data-day="sunday">
                 Sunday
               </button>
             </li>
@@ -180,84 +155,40 @@
         <div
           class="button-filter d-flex justify-content-between align-items-center"
         >
-          <div class="btn-group button-statu-filter">
-            <button
-              type="button"
-              class="btn btn-outline-secondary"
-              data-status="all"
-            >
+          <div class="item-statu-group">
+            <button type="button" data-status="all" class="item-statu active">
               All
             </button>
-            <button
-              type="button"
-              class="btn btn-outline-secondary"
-              data-status="completed"
-            >
+            <button type="button" data-status="completed" class="item-statu">
               Completed
             </button>
-            <button
-              type="button"
-              class="btn btn-outline-secondary"
-              data-status="incomplete"
-            >
+            <button type="button" data-status="incomplete" class="item-statu">
               Incomplete
             </button>
           </div>
-          <div class="btn-group button-day-filter">
-            <button
-              type="button"
-              class="btn btn-outline-secondary"
-              data-day="all"
-            >
+          <div class="item-day-group">
+            <button type="button" data-day="all" class="item-day active">
               All
             </button>
-            <button
-              type="button"
-              class="btn btn-outline-secondary"
-              data-day="monday"
-            >
+            <button type="button" data-day="monday" class="item-day">
               Monday
             </button>
-            <button
-              type="button"
-              class="btn btn-outline-secondary"
-              data-day="tuesday"
-            >
+            <button type="button" data-day="tuesday" class="item-day">
               Tuesday
             </button>
-            <button
-              type="button"
-              class="btn btn-outline-secondary"
-              data-day="wednesday"
-            >
+            <button type="button" data-day="wednesday" class="item-day">
               Wednesday
             </button>
-            <button
-              type="button"
-              class="btn btn-outline-secondary"
-              data-day="thursday"
-            >
+            <button type="button" data-day="thursday" class="item-day">
               Thursday
             </button>
-            <button
-              type="button"
-              class="btn btn-outline-secondary"
-              data-day="friday"
-            >
+            <button type="button" data-day="friday" class="item-day">
               Friday
             </button>
-            <button
-              type="button"
-              class="btn btn-outline-secondary"
-              data-day="saturday"
-            >
+            <button type="button" data-day="saturday" class="item-day">
               Saturday
             </button>
-            <button
-              type="button"
-              class="btn btn-outline-secondary"
-              data-day="sunday"
-            >
+            <button type="button" data-day="sunday" class="item-day">
               Sunday
             </button>
           </div>

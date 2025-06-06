@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+}
+
 :root {
   --bs-primary: #0d6efd;
   --bs-secondary: #6c757d;
@@ -10,17 +21,6 @@
   --bs-white: #ffffff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  font-size: 16px;
-  font-style: normal;
-  font-weight: normal;
-  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -39,20 +39,6 @@ footer {
   color: var(--bs-white);
 }
 
-.button-clear-all {
-  color: var(--bs-white);
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 1px solid var(--bs-dark);
-  background-color: var(--bs-dark);
-  transition: all 0.3s ease;
-}
-
-.button-clear-all:hover {
-  border-bottom: 1px solid var(--bs-white);
-}
-
 .todo-item {
   transition: background-color 0.3s ease;
   padding-top: 0.8rem;
@@ -60,20 +46,6 @@ footer {
 
 .todo-item:hover {
   background-color: var(--bs-light);
-}
-
-.delete-button {
-  transition: all 0.3s ease;
-  border: none;
-  padding: 5px;
-  border-radius: 50%;
-  background-color: var(--bs-white);
-  color: #6c757d;
-}
-
-.delete-button:hover {
-  background-color: var(--bs-danger);
-  color: var(--bs-white);
 }
 
 #input-new-mission,
