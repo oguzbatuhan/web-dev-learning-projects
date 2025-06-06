@@ -20,7 +20,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -34,28 +34,30 @@ footer {
   display: flex;
   align-items: center;
   width: 100vw;
-  height: 40px;
-  background-color: var(--bs-secondary);
+  height: 60px;
+  background-color: var(--bs-dark);
   color: var(--bs-white);
 }
 
 .button-clear-all {
   color: var(--bs-white);
-  border: 0;
-  background-color: var(--bs-secondary);
-  min-width: 150px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--bs-dark);
+  background-color: var(--bs-dark);
   transition: all 0.3s ease;
-  border-radius: 10px;
 }
+
 .button-clear-all:hover {
-  color: var(--bs-white);
-  background-color: var(--bs-danger);
+  border-bottom: 1px solid var(--bs-white);
 }
 
 .todo-item {
   transition: background-color 0.3s ease;
   padding-top: 0.8rem;
 }
+
 .todo-item:hover {
   background-color: var(--bs-light);
 }
@@ -68,12 +70,21 @@ footer {
   background-color: var(--bs-white);
   color: #6c757d;
 }
+
 .delete-button:hover {
   background-color: var(--bs-danger);
   color: var(--bs-white);
 }
 
-input,
+#input-new-mission,
+label {
+  cursor: text;
+}
+
+.form-check-input {
+  cursor: pointer;
+}
+
 i,
 p {
   cursor: pointer;

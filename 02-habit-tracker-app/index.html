@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <title>Todo List</title>
@@ -48,7 +48,7 @@
           <input
             placeholder="New mission."
             type="text"
-            class="form-control"
+            class="form-control text-dark all"
             id="input-new-mission"
           />
           <button
@@ -62,48 +62,33 @@
           </button>
           <ul class="dropdown-menu" aria-labelledby="button-dropdown-color">
             <li>
-              <button
-                type="button"
-                class="dropdown-item text-black"
-                data-color="black"
-              >
-                Black
+              <button type="button" class="dropdown-item" data-color="black">
+                <i class="bi bi-paint-bucket text-Dark"></i
+                ><i class="text-secondary">Dark</i>
               </button>
             </li>
             <li>
-              <button
-                type="button"
-                class="dropdown-item text-success"
-                data-color="success"
-              >
-                Success
+              <button type="button" class="dropdown-item" data-color="success">
+                <i class="bi bi-paint-bucket text-success"></i
+                ><i class="text-secondary">Success</i>
               </button>
             </li>
             <li>
-              <button
-                type="button"
-                class="dropdown-item text-danger"
-                data-color="danger"
-              >
-                Danger
+              <button type="button" class="dropdown-item" data-color="success">
+                <i class="bi bi-paint-bucket text-danger"></i
+                ><i class="text-secondary">Danger</i>
               </button>
             </li>
             <li>
-              <button
-                type="button"
-                class="dropdown-item text-warning"
-                data-color="warning"
-              >
-                Warning
+              <button type="button" class="dropdown-item" data-color="success">
+                <i class="bi bi-paint-bucket text-warning"></i
+                ><i class="text-secondary">Warning</i>
               </button>
             </li>
             <li>
-              <button
-                type="button"
-                class="dropdown-item text-info"
-                data-color="info"
-              >
-                Info
+              <button type="button" class="dropdown-item" data-color="success">
+                <i class="bi bi-paint-bucket text-info"></i
+                ><i class="text-secondary">Info</i>
               </button>
             </li>
           </ul>
@@ -118,42 +103,74 @@
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdown-day-button">
             <li>
-              <button type="button" class="dropdown-item" data-day="all">
+              <button
+                type="button"
+                class="dropdown-item text-secondary"
+                data-day="all"
+              >
                 All
               </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item" data-day="monday">
+              <button
+                type="button"
+                class="dropdown-item text-secondary"
+                data-day="monday"
+              >
                 Monday
               </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item" data-day="tuesday">
+              <button
+                type="button"
+                class="dropdown-item text-secondary"
+                data-day="tuesday"
+              >
                 Tuesday
               </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item" data-day="wednesday">
+              <button
+                type="button"
+                class="dropdown-item text-secondary"
+                data-day="wednesday"
+              >
                 Wednesday
               </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item" data-day="thursday">
+              <button
+                type="button"
+                class="dropdown-item text-secondary"
+                data-day="thursday"
+              >
                 Thursday
               </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item" data-day="friday">
+              <button
+                type="button"
+                class="dropdown-item text-secondary"
+                data-day="friday"
+              >
                 Friday
               </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item" data-day="saturday">
+              <button
+                type="button"
+                class="dropdown-item text-secondary"
+                data-day="saturday"
+              >
                 Saturday
               </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item" data-day="sunday">
+              <button
+                type="button"
+                class="dropdown-item text-secondary"
+                data-day="sunday"
+              >
                 Sunday
               </button>
             </li>
@@ -247,24 +264,71 @@
         </div>
       </div>
       <!-- tasks -->
-      <div>
-        <div class="container mt-5" id="tasks">
+      <div class="container">
+        <div class="mt-5" id="tasks">
           <ul class="list-unstyled form">
-            <li
-              class="border-bottom rounded d-flex justify-content-between align-items-center p-1 todo-item"
-              data-id="tasks-1"
-            >
-              <div>
-                <input type="checkbox" class="form-check-input" />
-                <label class="form-check-label"
-                  >Lorem ipsum dolor sit amet.</label
-                >
+            <li class="border-bottom" data-id="tasks-1">
+              <div
+                class="p-2 rounded d-flex justify-content-between align-items-center todo-item text-dark"
+              >
+                <div>
+                  <input
+                    type="checkbox"
+                    id="tasks-1"
+                    class="form-check-input"
+                  />
+                  <label for="tasks-1" class="form-check-label"
+                    >Lorem ipsum dolor sit amet.</label
+                  >
+                </div>
+                <button class="delete-button">
+                  <i
+                    class="bi bi-x-lg d-flex justify-content-center align-items-center"
+                  ></i>
+                </button>
               </div>
-              <button class="delete-button">
-                <i
-                  class="bi bi-x-lg d-flex justify-content-center align-items-center"
-                ></i>
-              </button>
+            </li>
+            <li class="border-bottom" data-id="tasks-2">
+              <div
+                class="p-2 rounded d-flex justify-content-between align-items-center todo-item text-dark"
+              >
+                <div>
+                  <input
+                    type="checkbox"
+                    id="tasks-2"
+                    class="form-check-input"
+                  />
+                  <label for="tasks-2" class="form-check-label"
+                    >Lorem ipsum dolor sit amet.</label
+                  >
+                </div>
+                <button class="delete-button">
+                  <i
+                    class="bi bi-x-lg d-flex justify-content-center align-items-center"
+                  ></i>
+                </button>
+              </div>
+            </li>
+            <li class="border-bottom" data-id="tasks-3">
+              <div
+                class="p-2 rounded d-flex justify-content-between align-items-center todo-item text-dark"
+              >
+                <div>
+                  <input
+                    type="checkbox"
+                    id="tasks-3"
+                    class="form-check-input"
+                  />
+                  <label for="tasks-3" class="form-check-label"
+                    >Lorem ipsum dolor sit amet.</label
+                  >
+                </div>
+                <button class="delete-button">
+                  <i
+                    class="bi bi-x-lg d-flex justify-content-center align-items-center"
+                  ></i>
+                </button>
+              </div>
             </li>
           </ul>
         </div>
