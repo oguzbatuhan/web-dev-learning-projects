@@ -8,3 +8,33 @@
   font-weight: normal;
   font-family: "Courier New", Courier, monospace;
 }
+
+.todo-item {
+  transition: background-color 0.3s ease;
+  padding-top: 0.8rem;
+}
+.todo-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.delete-button {
+  transition: all 0.3s ease;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: white;
+  color: #6c757d;
+}
+.delete-button:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+input,
+i {
+  cursor: pointer;
+}
+
+.todo-item {
+  transition: background-color 0.3s ease;
+}

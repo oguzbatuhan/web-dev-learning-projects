@@ -27,50 +27,82 @@
     <title>Todo List</title>
   </head>
   <body>
-    <div id="head">
-      <div class="container">
-        <div class="header">
-          <h1 class="h1 text-center mt-2 text-primary">Todo List</h1>
-        </div>
+    <header>
+      <h1 class="h1 text-center mt-2 text-primary">Todo List</h1>
+    </header>
+
+    <main>
+      <!-- adding and filtering tasks -->
+      <section class="container">
+        <!-- new mission -->
         <div class="input-group mb-3 dropdown">
-          <button class="btn btn-outline-primary" type="button" id="button-add">
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            id="button-new-mission"
+          >
             <i
               class="bi bi-plus-lg fs-4 d-flex justify-content-center align-items-center"
             ></i>
           </button>
-          <input placeholder="New mission." type="text" class="form-control" />
+          <input
+            placeholder="New mission."
+            type="text"
+            class="form-control"
+            id="input-new-mission"
+          />
           <button
-            class="btn btn-outline-primary dropdown-toggle"
             type="button"
-            id="dropdownColorBtn"
+            class="btn btn-outline-primary dropdown-toggle"
+            id="button-dropdown-color"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             Text color
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownColorBtn">
+          <ul class="dropdown-menu" aria-labelledby="button-dropdown-color">
             <li>
-              <button type="button" class="dropdown-item text-black">
+              <button
+                type="button"
+                class="dropdown-item text-black"
+                data-color="black"
+              >
                 Black
               </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item text-success">
+              <button
+                type="button"
+                class="dropdown-item text-success"
+                data-color="success"
+              >
                 Success
               </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item text-danger">
+              <button
+                type="button"
+                class="dropdown-item text-danger"
+                data-color="danger"
+              >
                 Danger
               </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item text-warning">
+              <button
+                type="button"
+                class="dropdown-item text-warning"
+                data-color="warning"
+              >
                 Warning
               </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item text-info">
+              <button
+                type="button"
+                class="dropdown-item text-info"
+                data-color="info"
+              >
                 Info
               </button>
             </li>
@@ -78,77 +110,168 @@
           <button
             class="btn btn-outline-primary dropdown-toggle"
             type="button"
-            id="dropdownDayBtn"
+            id="dropdown-day-button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             Choose day
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownDayBtn">
+          <ul class="dropdown-menu" aria-labelledby="dropdown-day-button">
             <li>
-              <button type="button" class="dropdown-item">General</button>
-            </li>
-            <li><button type="button" class="dropdown-item">Monday</button></li>
-            <li>
-              <button type="button" class="dropdown-item">Tuesday</button>
+              <button type="button" class="dropdown-item" data-day="all">
+                All
+              </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item">Wednesday</button>
+              <button type="button" class="dropdown-item" data-day="monday">
+                Monday
+              </button>
             </li>
             <li>
-              <button type="button" class="dropdown-item">Thursday</button>
+              <button type="button" class="dropdown-item" data-day="tuesday">
+                Tuesday
+              </button>
             </li>
-            <li><button type="button" class="dropdown-item">Friday</button></li>
             <li>
-              <button type="button" class="dropdown-item">Saturday</button>
+              <button type="button" class="dropdown-item" data-day="wednesday">
+                Wednesday
+              </button>
             </li>
-            <li><button type="button" class="dropdown-item">Sunday</button></li>
+            <li>
+              <button type="button" class="dropdown-item" data-day="thursday">
+                Thursday
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item" data-day="friday">
+                Friday
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item" data-day="saturday">
+                Saturday
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item" data-day="sunday">
+                Sunday
+              </button>
+            </li>
           </ul>
         </div>
+        <!-- Task Filters -->
         <div
           class="button-filter d-flex justify-content-between align-items-center"
         >
           <div class="btn-group button-statu-filter">
-            <button class="btn btn-outline-secondary" type="button">
-              General
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-status="all"
+            >
+              All
             </button>
-            <button class="btn btn-outline-secondary" type="button">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-status="completed"
+            >
               Completed
             </button>
-            <button class="btn btn-outline-secondary" type="button">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-status="incomplete"
+            >
               Incomplete
             </button>
           </div>
           <div class="btn-group button-day-filter">
-            <button class="btn btn-outline-secondary" type="button">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-day="all"
+            >
+              All
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-day="monday"
+            >
               Monday
             </button>
-            <button class="btn btn-outline-secondary" type="button">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-day="tuesday"
+            >
               Tuesday
             </button>
-            <button class="btn btn-outline-secondary" type="button">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-day="wednesday"
+            >
               Wednesday
             </button>
-            <button class="btn btn-outline-secondary" type="button">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-day="thursday"
+            >
               Thursday
             </button>
-            <button class="btn btn-outline-secondary" type="button">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-day="friday"
+            >
               Friday
             </button>
-            <button class="btn btn-outline-secondary" type="button">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-day="saturday"
+            >
               Saturday
             </button>
-            <button class="btn btn-outline-secondary" type="button">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-day="sunday"
+            >
               Sunday
             </button>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+      <!-- tasks -->
+      <section>
+        <div class="container mt-5" id="tasks">
+          <ul class="list-unstyled form">
+            <li
+              class="border-bottom rounded d-flex justify-content-between align-items-center p-1 todo-item"
+              data-id="tasks-1"
+            >
+              <div>
+                <input type="checkbox" class="form-check-input" />
+                <label class="form-check-label"
+                  >Lorem ipsum dolor sit amet.</label
+                >
+              </div>
+              <button class="delete-button">
+                <i
+                  class="bi bi-x-lg d-flex justify-content-center align-items-center"
+                ></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-    <div id="main"></div>
-
-    <div id="footer"></div>
+    <footer></footer>
 
     <script src="script.js"></script>
     <script
