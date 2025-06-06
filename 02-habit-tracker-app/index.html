@@ -28,12 +28,12 @@
   </head>
   <body>
     <header>
-      <h1 class="h1 text-center mt-2 text-primary">Todo List</h1>
+      <h1 class="h1 text-center pt-2 text-primary">Todo List</h1>
     </header>
 
     <main>
       <!-- adding and filtering tasks -->
-      <section class="container">
+      <div class="container">
         <!-- new mission -->
         <div class="input-group mb-3 dropdown">
           <button
@@ -245,9 +245,9 @@
             </button>
           </div>
         </div>
-      </section>
+      </div>
       <!-- tasks -->
-      <section>
+      <div>
         <div class="container mt-5" id="tasks">
           <ul class="list-unstyled form">
             <li
@@ -268,10 +268,19 @@
             </li>
           </ul>
         </div>
-      </section>
+      </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>
+          <p class="m-0">&copy; 2025 Oğuz Batuhan. All rights reserved.</p>
+        </div>
+        <div>
+          <button class="button-clear-all">Clear all tasks</button>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
     <script
