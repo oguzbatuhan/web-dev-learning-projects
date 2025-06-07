@@ -23,6 +23,16 @@
     width: var(--width-md);
   }
 
+  .button-text-color-large,
+  .button-text-day-large {
+    display: inline-block;
+  }
+
+  .button-text-color-medium,
+  .button-text-day-medium {
+    display: none;
+  }
+
   .item-statu:hover,
   .item-day:hover {
     color: var(--bs-dark);
