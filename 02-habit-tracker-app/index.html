@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/button.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/variables.css" />
     <!-- cdn -->
     <link
       rel="stylesheet"
@@ -38,7 +39,7 @@
 
     <main>
       <!-- adding and filtering tasks -->
-      <div class="container">
+      <div class="width-container">
         <!-- new mission -->
         <div class="input-group mb-3 dropdown">
           <button
@@ -64,7 +65,10 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Text color
+            <i
+              class="bi bi-paint-bucket text-primary button-text-color-icons-responsive"
+            ></i
+            ><span class="button-text-color-responsive">Text color</span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="button-dropdown-color">
             <li>
@@ -106,7 +110,10 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Choose day
+            <i
+              class="bi bi-hourglass text-primary button-text-day-icons-responsive"
+            ></i
+            ><span class="button-text-day-responsive">Choose day</span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdown-day-button">
             <li>
@@ -155,7 +162,8 @@
         <div
           class="button-filter d-flex justify-content-between align-items-center"
         >
-          <div class="item-statu-group">
+          <!-- statu filter large -->
+          <div id="statu-filter-group-large">
             <button type="button" data-status="all" class="item-statu active">
               All
             </button>
@@ -166,7 +174,53 @@
               Incomplete
             </button>
           </div>
-          <div class="item-day-group">
+          <!-- statu filter medium -->
+          <div id="statu-filter-group-medium">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              id="dropdown-statu-button-medium"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              Statu filter
+            </button>
+            <ul
+              class="dropdown-menu item-statu-group"
+              aria-labelledby="dropdown-statu-button-medium"
+            >
+              <li>
+                <button
+                  type="button"
+                  data-status="all"
+                  class="item-statu active"
+                >
+                  All
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  data-status="completed"
+                  class="item-statu"
+                >
+                  Completed
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  data-status="incomplete"
+                  class="item-statu"
+                >
+                  Incomplete
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- day filter group large -->
+          <div id="day-filter-group-large" class="item-day-group">
             <button type="button" data-day="all" class="item-day active">
               All
             </button>
@@ -192,10 +246,68 @@
               Sunday
             </button>
           </div>
+          <!-- day filter group medium -->
+          <div id="day-filter-group-medium">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              id="dropdown-day-button-medium"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              Day filter
+            </button>
+            <ul
+              class="dropdown-menu item-day-group"
+              aria-labelledby="dropdown-day-button-medium"
+            >
+              <li>
+                <button type="button" data-day="all" class="item-day active">
+                  All
+                </button>
+              </li>
+              <li>
+                <button type="button" data-day="monday" class="item-day">
+                  Monday
+                </button>
+              </li>
+              <li>
+                <button type="button" data-day="tuesday" class="item-day">
+                  Tuesday
+                </button>
+              </li>
+              <li>
+                <button type="button" data-day="wednesday" class="item-day">
+                  Wednesday
+                </button>
+              </li>
+              <li>
+                <button type="button" data-day="thursday" class="item-day">
+                  Thursday
+                </button>
+              </li>
+              <li>
+                <button type="button" data-day="friday" class="item-day">
+                  Friday
+                </button>
+              </li>
+              <li>
+                <button type="button" data-day="saturday" class="item-day">
+                  Saturday
+                </button>
+              </li>
+              <li>
+                <button type="button" data-day="sunday" class="item-day">
+                  Sunday
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <!-- tasks -->
-      <div class="container">
+      <div class="width-container">
         <div class="mt-5" id="tasks">
           <ul class="list-unstyled form">
             <li class="border-bottom" data-id="tasks-1">
@@ -267,7 +379,9 @@
     </main>
 
     <footer>
-      <div class="container d-flex justify-content-between align-items-center">
+      <div
+        class="width-container d-flex justify-content-between align-items-center"
+      >
         <div>
           <p class="m-0">&copy; 2025 Oğuz Batuhan. All rights reserved.</p>
         </div>

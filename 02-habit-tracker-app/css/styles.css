@@ -9,20 +9,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-:root {
-  --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
-  --bs-success: #198754;
-  --bs-danger: #dc3545;
-  --bs-warning: #ffc107;
-  --bs-info: #0dcaf0;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
-  --bs-white: #ffffff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-}
-
 body {
   min-height: 100vh;
   display: flex;
@@ -48,16 +34,50 @@ footer {
   background-color: var(--bs-light);
 }
 
-#input-new-mission,
+#input-new-mission {
+  border: 1px solid var(--bs-primary) !important;
+  cursor: text;
+}
+
 label {
   cursor: text;
 }
 
-.form-check-input {
-  cursor: pointer;
-}
-
+.form-check-input,
 i,
 p {
   cursor: pointer;
+}
+
+.width-container {
+  margin: auto;
+  width: 80%;
+  padding: 0 2px 0 2px;
+}
+
+.btn-outline-secondary.dropdown-toggle {
+  border: 0;
+}
+
+.width-container {
+  width: 100%;
+}
+
+#day-filter-group-large,
+#statu-filter-group-large {
+  display: none;
+}
+
+#day-filter-group-medium,
+#statu-filter-group-medium {
+  display: block;
+}
+
+.button-text-color-responsive,
+.button-text-day-responsive {
+  display: none;
+}
+
+footer div {
+  flex-direction: column;
 }
