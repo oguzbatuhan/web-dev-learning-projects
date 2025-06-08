@@ -40,7 +40,7 @@
     <main>
       <!-- adding and filtering tasks -->
       <div class="width-container">
-        <!-- new mission -->
+        <!-- new mission / color and day add-->
         <div class="input-group mb-3 dropdown">
           <button
             type="button"
@@ -61,7 +61,7 @@
           <button
             type="button"
             class="btn btn-outline-primary dropdown-toggle"
-            id="button-dropdown-color"
+            id="dropdown-color-add"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
@@ -70,7 +70,11 @@
             ></i
             ><span class="button-text-color-large">Text color</span>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="button-dropdown-color">
+          <ul
+            id="dropdown-color-add-items"
+            class="dropdown-menu"
+            aria-labelledby="button-dropdown-color"
+          >
             <li>
               <button
                 type="button"
@@ -106,14 +110,18 @@
           <button
             class="btn btn-outline-primary dropdown-toggle"
             type="button"
-            id="dropdown-day-button"
+            id="dropdown-day-add"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             <i class="bi bi-hourglass text-primary button-text-day-medium"></i
             ><span class="button-text-day-large">Choose day</span>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdown-day-button">
+          <ul
+            id="dropdown-day-add-items"
+            class="dropdown-menu"
+            aria-labelledby="dropdown-day-button"
+          >
             <li>
               <button type="button" class="dropdown-item active" data-day="all">
                 All
@@ -389,7 +397,14 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- js -->
+    <script src="js/ui.js" type="module"></script>
+    <script src="js/filter.js" type="module"></script>
+    <script src="js/todo.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/storage.js" type="module"></script>
+
+    <!-- cdn js -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
       integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
