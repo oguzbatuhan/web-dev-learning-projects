@@ -1,0 +1,114 @@
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--body-bg);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:root {
+  --body-bg: #121212;
+  --calculator-bg: #1e1e2f;
+
+  --display-bg: #2b2b3d;
+  --display-text: #ffffff;
+
+  --digit-bg: #2e2e42;
+  --digit-text: #ffffff;
+  --digit-hover: #3e3e5a;
+  --digit-focus: #5a5a7f;
+
+  --operator-bg: #3a2f55;
+  --operator-text: #ffd700;
+  --operator-hover: #4b3c72;
+  --operator-focus: #5c4d90;
+
+  --equal-bg: #ffb400;
+  --equal-text: #1e1e2f;
+  --equal-hover: #ffc933;
+  --equal-focus: #ffd966;
+
+  --clear-bg: #932f2f;
+  --clear-text: #ffffff;
+  --clear-hover: #af3f3f;
+  --clear-focus: #c25454;
+}
+
+.calculator {
+  background-color: var(--calculator-bg);
+  border-radius: 10px;
+}
+.display {
+  height: 5rem;
+  background-color: var(--display-bg);
+  color: var(--display-text);
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.display span {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+.btn {
+  border: none;
+  font-size: 4rem;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  margin: 5px;
+}
+.btn.digit {
+  background-color: var(--digit-bg);
+  color: var(--digit-text);
+}
+.btn.digit:hover {
+  background-color: var(--digit-hover);
+}
+.btn.digit:focus {
+  background-color: var(--digit-focus);
+}
+.btn.operator {
+  background-color: var(--operator-bg);
+  color: var(--operator-text);
+}
+.btn.operator:hover {
+  background-color: var(--operator-hover);
+}
+.btn.operator:focus {
+  background-color: var(--operator-focus);
+}
+.btn.clear {
+  background-color: var(--clear-bg);
+  color: var(--clear-text);
+}
+.btn.clear:hover {
+  background-color: var(--clear-hover);
+}
+.btn.clear:focus {
+  background-color: var(--clear-focus);
+}
+.btn.equals {
+  background-color: var(--equal-bg);
+  color: var(--equal-text);
+}
+.btn.equals:hover {
+  background-color: var(--equal-hover);
+}
+.btn.equals:focus {
+  background-color: var(--equal-focus);
+}
