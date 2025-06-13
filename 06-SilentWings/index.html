@@ -10,23 +10,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="public/styles.css" />
-    <title>Owls</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="public/svg/icon.png" />
+    <title>SilentWings</title>
   </head>
   <body>
-    <header>
+    <header id="home-pages">
       <div class="navbar">
         <div
           class="container d-flex justify-content-between align-items-center"
         >
-          <a href="index.html"><h1>Owls</h1></a>
+          <a href="index.html"><h1>SilentWings</h1></a>
           <ul class="d-flex justify-content-between align-items-center">
-            <li><a class="action" href="#">Home</a></li>
-            <li><a href="#">Asio otus</a></li>
-            <li><a href="#">Athene noctua</a></li>
-            <li><a href="#">Bubo bubo</a></li>
-            <li><a href="#">Bubo scandiacus</a></li>
-            <li><a href="#">Tyto alba</a></li>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="pages/asio-otus.html">Asio otus</a></li>
+            <li><a href="pages/athene-noctua.html">Athene noctua</a></li>
+            <li><a href="pages/bubo-bubo.html">Bubo bubo</a></li>
+            <li><a href="pages/bubo-scandiacus.html">Bubo scandiacus</a></li>
+            <li><a href="pages/tyto-alba.html">Tyto alba</a></li>
           </ul>
         </div>
       </div>
@@ -40,69 +41,71 @@
     </header>
 
     <main>
-      <div
-        class="gap-4 my-5 container flex-wrap d-flex justify-content-between"
-      >
-        <a href="">
-          <div class="card" style="width: 18rem">
-            <img
-              src="public/svg/Asio otus.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">Asio otus</p>
+      <div class="bg-gradient">
+        <div
+          class="gap-4 py-5 mb-5 container flex-wrap d-flex justify-content-between"
+        >
+          <a href="pages/asio-otus.html">
+            <div class="card" style="width: 18rem">
+              <img
+                src="public/img/Asio otus.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Asio otus</p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card" style="width: 18rem">
-            <img
-              src="public/svg/Athene noctua.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">Athene noctua</p>
+          </a>
+          <a href="pages/athene-noctua.html">
+            <div class="card" style="width: 18rem">
+              <img
+                src="public/img/Athene noctua.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Athene noctua</p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card" style="width: 18rem">
-            <img
-              src="public/svg/Bubo bubo.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">Bubo bubo</p>
+          </a>
+          <a href="pages/bubo-bubo.html">
+            <div class="card" style="width: 18rem">
+              <img
+                src="public/img/Bubo bubo.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Bubo bubo</p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card" style="width: 18rem">
-            <img
-              src="public/svg/Bubo scandiacus.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">Bubo scandiacus</p>
+          </a>
+          <a href="pages/bubo-scandiacus.html">
+            <div class="card" style="width: 18rem">
+              <img
+                src="public/img/Bubo scandiacus.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Bubo scandiacus</p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card" style="width: 18rem">
-            <img
-              src="public/svg/Tyto alba.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">Tyto alba</p>
+          </a>
+          <a href="pages/tyto-alba.html">
+            <div class="card" style="width: 18rem">
+              <img
+                src="public/img/Tyto alba.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Tyto alba</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     </main>
 
@@ -112,6 +115,6 @@
       </div>
     </footer>
 
-    <script src="public/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
