@@ -2,8 +2,8 @@ const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 1) {
-    navbar.classList.add("bg-black");
+    navbar.classList.add("menu");
   } else {
-    navbar.classList.remove("bg-black");
+    navbar.classList.remove("menu");
   }
 });

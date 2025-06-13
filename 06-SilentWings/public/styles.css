@@ -1,3 +1,10 @@
+:root {
+  --midnight-blue: #0d1b2a;
+  --forest-green: #1b4332;
+  --light-beige: #f5f0e1;
+  --ash-gray: #2f3640;
+  --owl-orange: #ff6600;
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +14,14 @@ html {
 }
 body {
   position: relative;
+  z-index: -2;
+  background: linear-gradient(
+    to bottom,
+    #0f3d2e 0%,
+    #1e3d59 40%,
+    #2c3e50 70%,
+    #0d1b2a 100%
+  );
 }
 header {
   min-width: 100vw;
@@ -16,12 +31,12 @@ header {
   background-size: cover;
   background-position: center;
   z-index: -1;
-  color: white;
+  color: var(--light-beige);
   font-size: 16px;
 }
 footer {
-  background-color: black;
-  color: white;
+  background-color: var(--forest-green);
+  color: var(--light-beige);
   height: 50px;
 }
 .navbar {
@@ -33,15 +48,18 @@ footer {
   z-index: 10;
   transition: all 0.3s ease;
 }
-h1 {
+.menu {
+  background-color: var(--forest-green);
+}
+.navbar h1 {
   margin: 0;
   padding: 0;
 }
-ul {
+.navbar ul {
   margin: 0;
   padding: 0;
 }
-li {
+.navbar li {
   list-style: none;
   margin: 10px 10px;
   padding: 10px 20px;
@@ -49,7 +67,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: var(--light-beige);
   margin: 0;
   padding: 0;
 }
@@ -58,22 +76,26 @@ p {
   padding: 0;
 }
 a:hover {
-  color: orange;
+  color: var(--owl-orange);
 }
 a.action {
-  color: orange;
+  color: var(--owl-orange);
 }
 .header-text {
   top: 350px;
   left: 120px;
   position: absolute;
+  color: var(--light-beige);
 }
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  background-color: var(--light-beige);
+  color: var(--midnight-blue);
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 102, 0, 0.3);
 }
 .card:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 102, 0, 0.5);
   transform: scale(1.05);
 }
