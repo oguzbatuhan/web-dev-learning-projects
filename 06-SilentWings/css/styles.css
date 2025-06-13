@@ -48,6 +48,17 @@ main {
   color: var(--light-beige);
   font-size: 16px;
 }
+#species {
+  background-color: var(--midnight-blue);
+  color: var(--light-beige);
+}
+#species img {
+  float: left;
+  object-fit: cover;
+  margin: 0 40px 20px 0;
+  width: 40%;
+  border-radius: 10px;
+}
 footer {
   background-color: var(--forest-green);
   color: var(--light-beige);
