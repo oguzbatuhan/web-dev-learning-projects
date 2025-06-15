@@ -12,6 +12,10 @@
 html {
   position: relative;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
 }
 main {
   min-height: calc(100vh - 128px);
